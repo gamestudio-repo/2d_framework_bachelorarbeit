@@ -233,9 +233,109 @@ SzenenName/
 > Im **Non-GUI/CLI-Modus** muss `Map.txt` **nicht** vorhanden sein.
 
 ### Bedeutung von `Map.txt`
+#### Map.txt (GUI / Optik)
 
-`Map.txt` hat **keinen Einfluss auf die Tests** oder Ergebnisse.  
-Sie dient nur der **optischen Darstellung** im GUI als **Background/Layer** („Verschönerung“ der Szene).
+`Map.txt` ist **ausschließlich für visuelle Testzwecke im GUI-Modus** gedacht (Background/Layer), z. B. um eine Szene „schöner“ darzustellen oder das Verhalten **optisch** zu prüfen.
+
+- **Für Benchmarks / Auswertungen sollte `Map.txt` nicht genutzt werden.**
+- **Starte dafür nicht im GUI-Modus** (`GUIMODUS = 0` in `window.txt` und dann `/start` bzw. per Test-Befehl laufen lassen).
+
+> Hinweis: `Map.txt` hat **keinen Einfluss auf die Logik** der Tests (Build/Query/Insert/Remove/Update).  
+> Der GUI-Modus kann jedoch durch Rendering/Overhead Messwerte beeinflussen – daher für reproduzierbare Tests besser **ohne GUI**.
+
+---
+
+###### Format / Aufbau
+
+`Map.txt` ist zeilenbasiert aufgebaut und beschreibt ein **Tile-Raster** plus eine **ID-Matrix**, die auf ein Tileset-Bild verweist.
+
+####### Zeile 1: Tile-Größe (Pixel pro Raster-Feld)
+
+Beispiel:
+```text
+32x32
+```
+
+→ Jedes Feld im Raster ist **32 Pixel breit** und **32 Pixel hoch**.
+
+---
+
+####### Zeile 2: Map-Größe (Columns x Rows)
+
+Beispiel:
+```text
+36x27
+```
+
+→ Die Map besteht aus **36 Spalten** und **27 Reihen** (jedes Feld hat die oben definierte Tile-Größe).
+
+---
+
+####### Zeile 3: Tileset-Dateiname
+
+Beispiel:
+```text
+Test1.bmp
+```
+
+→ Das Bild, aus dem die Tiles später geladen/geschnitten werden.  
+Erlaubt sind **`.png`** oder **`.bmp`**.
+
+---
+
+####### Zeile 4: Start-Signal für die Grid-Daten
+
+Beispiel:
+```text
+######
+```
+
+→ Diese Zeile (mindestens ein `#`) ist das Signal für den Loader:  
+**Ab hier kommen die Tile-IDs als Grid.**
+
+---
+
+####### Danach: Tile-IDs als Grid
+
+Jetzt kommen Zeilen wie:
+```text
+205,206,205,206,...
+```
+
+Regeln:
+- **Jede Zeile entspricht einer Reihe (Row)** der Map (erste Zeile nach `######` = Row 0, zweite = Row 1, …).
+- **Komma-getrennte Werte** sind die **Spalten (Columns)** in dieser Reihe (erstes Element = Column 0, zweites = Column 1, …).
+- Der Wert ist die **Tile-ID**, die auf ein Tile im Tileset-Bild verweist (die Zuordnung/Interpretation passiert im Loader).
+
+Wichtig:
+- Pro Zeile müssen genau **so viele IDs** stehen wie `Columns`.
+- Es müssen genau **so viele Zeilen** folgen wie `Rows`.
+
+---
+
+####### Letzte Zeile: End-Signal
+
+Am Ende muss erneut eine Zeile mit `#` kommen:
+```text
+######
+```
+
+→ Signalisiert dem Loader: **Map-Daten sind zu Ende.**
+
+---
+
+###### Mini-Beispiel (4 Spalten x 3 Reihen)
+
+```text
+32x32
+4x3
+Tiles.bmp
+######
+1,1,1,1
+1,2,2,1
+1,1,1,1
+######
+```
 
 ### Relevante Dateien/Ordner für die Tests
 
@@ -792,6 +892,7 @@ Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definier
 ## Lizenz
 
 *(Hier deine Lizenz eintragen, z. B. MIT / Apache-2.0 / Proprietary)*
+
 
 
 
