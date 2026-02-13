@@ -245,11 +245,11 @@ SzenenName/
 
 ---
 
-###### Format / Aufbau
+##### Format / Aufbau
 
 `Map.txt` ist zeilenbasiert aufgebaut und beschreibt ein **Tile-Raster** plus eine **ID-Matrix**, die auf ein Tileset-Bild verweist.
 
-####### Zeile 1: Tile-Größe (Pixel pro Raster-Feld)
+###### Zeile 1: Tile-Größe (Pixel pro Raster-Feld)
 
 Beispiel:
 ```text
@@ -260,7 +260,7 @@ Beispiel:
 
 ---
 
-####### Zeile 2: Map-Größe (Columns x Rows)
+###### Zeile 2: Map-Größe (Columns x Rows)
 
 Beispiel:
 ```text
@@ -271,7 +271,7 @@ Beispiel:
 
 ---
 
-####### Zeile 3: Tileset-Dateiname
+###### Zeile 3: Tileset-Dateiname
 
 Beispiel:
 ```text
@@ -283,7 +283,7 @@ Erlaubt sind **`.png`** oder **`.bmp`**.
 
 ---
 
-####### Zeile 4: Start-Signal für die Grid-Daten
+###### Zeile 4: Start-Signal für die Grid-Daten
 
 Beispiel:
 ```text
@@ -295,7 +295,7 @@ Beispiel:
 
 ---
 
-####### Danach: Tile-IDs als Grid
+###### Danach: Tile-IDs als Grid
 
 Jetzt kommen Zeilen wie:
 ```text
@@ -313,7 +313,7 @@ Wichtig:
 
 ---
 
-####### Letzte Zeile: End-Signal
+###### Letzte Zeile: End-Signal
 
 Am Ende muss erneut eine Zeile mit `#` kommen:
 ```text
@@ -892,6 +892,7 @@ Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definier
 ## Lizenz
 
 *(Hier deine Lizenz eintragen, z. B. MIT / Apache-2.0 / Proprietary)*
+
 
 
 
