@@ -106,7 +106,7 @@ Diese Variante funktioniert, wenn sich alle `.cpp` Dateien nur im Root, `Toolbox
 
 ```bat
 mkdir bin 2>nul
-g++ -std=c++17 -O2 main.cpp *.cpp Toolbox\*.cpp Datastructures\*.cpp -o bin\framework.exe
+g++ -std=c++17 -o bin\framework.exe Main.cpp -static -lgdi32 -lws2_32
 
 REM Assets kopieren (Graphics enthält nur Inhalte, keinen Code)
 xcopy Graphics bin\Graphics /E /I /Y >nul
@@ -792,3 +792,4 @@ Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definier
 ## Lizenz
 
 *(Hier deine Lizenz eintragen, z. B. MIT / Apache-2.0 / Proprietary)*
+
