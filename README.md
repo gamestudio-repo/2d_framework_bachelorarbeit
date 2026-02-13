@@ -64,6 +64,10 @@ Jede Datenstruktur wird über die folgenden 5 Operationen geprüft:
 
 ## Ordnerstruktur
 
+Die Dateien aus dem Repo-Ordner **Dateien** müssen in den selben Ordner liegen indem auch das Framework liegt oder aus der die **CMD-Batch** ausgeführt wird.
+> Der Ordner **Testszenen** war zu groß und konnte deshalb nicht hochgeladen werden. Er wird per Mail seperat zugestellt, falls angefordert.
+> Die Textdatei **Map.txt** kann seperat in die einzelnen Szene kopiert werden. Sie ist nur eine vordefinierte einfache Map-Version. Man kann sie dennoch selber nach belieben erstellen und verändern.
+
 ```text
 .
 ├─ main.cpp
@@ -898,6 +902,7 @@ All rights reserved.
 This repository is provided for review purposes as part of a bachelor's thesis.
 No permission is granted to use, copy, modify, publish, distribute, sublicense,
 and/or sell copies of the software without explicit written permission.
+
 
 
 
