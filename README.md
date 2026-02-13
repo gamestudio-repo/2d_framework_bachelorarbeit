@@ -781,7 +781,7 @@ Die Logdaten enthalten typischerweise:
 
 ## Testszenen
 
-Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definierten Szenen. Damit kannst du die Tests **einfach reproduzieren**, indem du diese Szenen in deinen `Scene/`-Ordner kopierst und anschließend wie gewohnt per CMD lädst.
+Im WinRar-Ordner **`Testszenen`** findest du die von mir verwendeten, bereits definierten Szenen. Damit kannst du die Tests **einfach reproduzieren**, indem du diese Szenen in deinen `Scene/`-Ordner kopierst und anschließend wie gewohnt per CMD lädst.
 
 > **Achtung:** Für eine **Reproduktion** musst du auf die **Szenengröße** achten.  
 > Die Szenengröße entspricht immer den Werten aus `window.txt` (**WIDTH** und **HEIGHT**). Um exakt die gleichen Szenen wie in meiner Arbeit zu erhalten, solltest du in der Arbeit nachschauen, welche Szenengröße verwendet wurde, und diese Werte in `window.txt` übernehmen.  
@@ -792,5 +792,6 @@ Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definier
 ## Lizenz
 
 *(Hier deine Lizenz eintragen, z. B. MIT / Apache-2.0 / Proprietary)*
+
 
 
