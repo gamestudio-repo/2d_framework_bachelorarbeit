@@ -1,0 +1,8 @@
+#include "Definitions.cpp"
+#include "PMath.cpp"
+#include "Structure.cpp"
+#include "PFile.cpp"
+#include "Thread.cpp"
+#include "Semaphore.cpp"
+#include "Timer.cpp"
+#include "Logger.cpp"

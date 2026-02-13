@@ -1,0 +1,13 @@
+#include <iostream>
+#include <windows.h>
+#include "Toolbox/Toolbox.cpp"
+#include "MemoryManager.cpp"
+#include "Datastructures/Datastructures.cpp"
+#include "Basicobject.cpp"
+#include "BMPLoader.cpp"
+#include "PNGLoader.cpp"
+#include "Imageloader.cpp"
+#include "Map.cpp"
+#include "Scenemanager.cpp"
+#include "Mainframe.cpp"
+#include "PWindow.cpp"
