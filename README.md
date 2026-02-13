@@ -891,7 +891,15 @@ Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definier
 
 ## Lizenz
 
-*(Hier deine Lizenz eintragen, z. B. MIT / Apache-2.0 / Proprietary)*
+Copyright (c) 2026
+
+All rights reserved.
+
+This repository is provided for review purposes as part of a bachelor's thesis.
+No permission is granted to use, copy, modify, publish, distribute, sublicense,
+and/or sell copies of the software without explicit written permission.
+
+
 
 
 
