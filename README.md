@@ -66,6 +66,7 @@ Jede Datenstruktur wird über die folgenden 5 Operationen geprüft:
 
 Die Dateien aus dem Repo-Ordner **Dateien** müssen in den selben Ordner liegen indem auch das Framework liegt oder aus der die **CMD-Batch** ausgeführt wird.
 > Der Ordner **Testszenen** war groß, weshalb ich die einzelnen Szenenordner in einzelne **.rar** gepackt habe. Diese einzelnen Szenen in **Testszenen** müssen also vorher entpackt werden und die einzelnen entpackten Szenen könnnen dann später einfach in den **Scene/** Ordner kopiert werden.
+
 > Die Textdatei **Map.txt** kann seperat in die einzelnen Szene kopiert werden. Sie ist nur eine vordefinierte einfache Map-Version. Man kann sie dennoch selber nach belieben erstellen und verändern.
 
 ```text
@@ -904,6 +905,7 @@ No permission is granted to use, copy, modify, publish, distribute, sublicense,
 and/or sell copies of the software without explicit written permission.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
 
 
 
