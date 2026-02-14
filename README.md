@@ -65,7 +65,7 @@ Jede Datenstruktur wird über die folgenden 5 Operationen geprüft:
 ## Ordnerstruktur
 
 Die Dateien aus dem Repo-Ordner **Dateien** müssen in den selben Ordner liegen indem auch das Framework liegt oder aus der die **CMD-Batch** ausgeführt wird.
-> Der Ordner **Testszenen** war zu groß und konnte deshalb nicht hochgeladen werden. Er wird per Mail seperat zugestellt, falls angefordert.
+> Der Ordner **Testszenen** war groß, weshalb ich die einzelnen Szenenordner in einzelne **.rar** gepackt habe. Diese einzelnen Szenen in **Testszenen** müssen also vorher entpackt werden und die einzelnen entpackten Szenen könnnen dann später einfach in den **Scene/** Ordner kopiert werden.
 > Die Textdatei **Map.txt** kann seperat in die einzelnen Szene kopiert werden. Sie ist nur eine vordefinierte einfache Map-Version. Man kann sie dennoch selber nach belieben erstellen und verändern.
 
 ```text
@@ -885,7 +885,7 @@ Die Logdaten enthalten typischerweise:
 
 ## Testszenen
 
-Im Ordner **`Testszenen/`** findest du die von mir verwendeten, bereits definierten Szenen. Damit kannst du die Tests **einfach reproduzieren**, indem du diese Szenen in deinen `Scene/`-Ordner kopierst und anschließend wie gewohnt per CMD lädst.
+Im Ordner **`Testszenen/`** (der sich in dem Repo-Ordner **Dateien** befindet) findest du die von mir verwendeten, bereits definierten Szenen. Damit kannst du die Tests **einfach reproduzieren**, indem du diese Szenen in deinen `Scene/`-Ordner kopierst und anschließend wie gewohnt per CMD lädst. **Aber aufgepasst:** Die einzelnen Szenen in **Testszenen** sind jeweils in einer **.rar(Winrar-Datei)** drin. Das heißt, dass wenn man die einzelnen Szenen kopieren will, man die einzelnen **.rar** Szenendateien aus **Testszenen** erstmal entpacken muss und die entpackten Ordner dann in den **Scene/** kopieren muss.
 
 > **Achtung:** Für eine **Reproduktion** musst du auf die **Szenengröße** achten.  
 > Die Szenengröße entspricht immer den Werten aus `window.txt` (**WIDTH** und **HEIGHT**). Um exakt die gleichen Szenen wie in meiner Arbeit zu erhalten, solltest du in der Arbeit nachschauen, welche Szenengröße verwendet wurde, und diese Werte in `window.txt` übernehmen.  
@@ -904,6 +904,7 @@ No permission is granted to use, copy, modify, publish, distribute, sublicense,
 and/or sell copies of the software without explicit written permission.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
 
 
 
